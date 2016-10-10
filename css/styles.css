@@ -3,15 +3,25 @@ body {
 	margin: 50px 70px;
 	font-size: 18px;
 	line-height:  1.3;
-	font-family: 'Arial Regular';
+	font-family: 'Arial';
 }
-
+.active {
+	color: #0481c2;
+}
 a {
 	color: #999;
+	text-decoration: none;
 }
 a:hover {
 	color: #0481c2;
 	text-decoration: none;
+}
+.clearfix:after {
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: ".";
 }
 #main {
 	display: flex;
@@ -19,7 +29,7 @@ a:hover {
 }
 #main p {
 	text-align: justify;
-	font-family: 'Trebuchet MS Regular';
+	font-family: 'Arial';
 }
 nav a {
 	font-weight: bold;	
@@ -33,13 +43,8 @@ li {
 .logo {
 	float: left;
 }
-.clearfix:after {
-	display: table;
-	clear: both;
-	content: "";
-}
 header {
-	margin-bottom: 38px;
+	margin-bottom: 10px;
 }
 
 
@@ -49,27 +54,30 @@ header {
 	border-bottom: 10px solid #0481c2;
 	padding: 40px 0;
 }
-	.post {
+	.somenews {
 		position: absolute;
-	    width: 26%;
-	    right: 4%;
-	    top: 23%;
+	    width: 40%;
+	    right: 0;
+	    top: 0;
 	    color: white;
 	    padding: 80px 50px;
 	    background-color: rgba(255,255,255,0.5);
 	    overflow: hidden;
 	}
-	.post h3 {
+	.somenews h3 {
 		margin-bottom: 30px;
 		text-align: center;
 	}
-	.post p {
+	.somenews p {
 		text-align: justify;
+	}
+	.box {
+		position: relative;
+		overflow: hidden;
 	}
 	 .box img {
 				display: block;
 				width: 100%;
-				position: relative;
 	}
 	.products {
 		display: flex;
@@ -82,10 +90,10 @@ header {
 	}
 	.col1, .col2, .col3{
 		
-		width:30%;
+		width:32%;
 	}
-	.col2, .col3 {
-		margin-left: 5%;
+	.col2 {
+		margin: 0 2%;
 	}
 	div.products img {
 		width:100%;
@@ -130,5 +138,8 @@ footer div.copyright {
 	width:25%;
 	text-align: right;
 	color:#999;
+}
 
+footer div.copyright p {
+	margin: 0;
 }
